@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes - WeSearch</title>
+    <link rel="icon" href="../img/WeSearch_icon.png">
+    <link rel="stylesheet" href="../css/ajustes.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Enlace al CDN de Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+
+<body>
+
+    <h1>AJUSTES</h1>
+    <a class="ajustes-item" href="../html/perfil.html">
+        <img src="https://img.icons8.com/ios-filled/100/FFFFFF/gender-neutral-user.png" alt="perfil"/>
+        <h2>Perfil</h2>
+    </a>
+    <a class="ajustes-item" href="../html/notificaciones.html">
+        <img src="https://img.icons8.com/ios-filled/100/FFFFFF/appointment-reminders--v1.png" alt="Notificaciones"/>
+        <h2>Notificaciones</h2>
+    </a>
+    <a class="ajustes-item" href="../assets/Manual de Usuario weSearch.pdf" download="Manual de Usuario weSearch.pdf">
+        <img src="https://img.icons8.com/ios-filled/100/FFFFFF/book.png" alt="Manual"/>
+        <h2>Manual de usuario</h2>
+    </a>
+    <a class="ajustes-item" href="../php/logout.php">
+        <img style="margin-left: 7px;" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/FFFFFF/external-online-account-logout-with-arrow-direction-mark-login-bold-tal-revivo.png" alt="cerrar"/>
+        <h2>Cerrar sesión</h2>
+    </a>
+
+
+
+    <nav>
+        <div class="nav_list">
+            <a href="#" onclick="verificarFase()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/process.png" alt="process" />
+                <span class="nav_text">Proceso</span>
+            </a>
+            <a href="#" onclick="verificarOfertas()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/briefcase.png" alt="briefcase" id="ofertasB"/>
+                <span class="nav_text">Ofertas</span>
+            </a>
+            <a href="#" onclick="verificarFavoritos()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/like--v1.png" alt="like--v1" />
+                <span class="nav_text">Favoritos</span>
+            </a>
+            <a href="ajustes.html" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/settings.png" alt="settings" />
+                <span class="nav_text">Ajustes</span>
+            </a>
+        </div>
+    </nav>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/proceso.js"></script> 
+</body>
+
+</html>

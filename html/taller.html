@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Virtual - WeSearch</title>
+    <link rel="icon" href="../img/WeSearch_icon.png">
+    <link rel="stylesheet" href="../css/taller.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Enlace al CDN de Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <div class="taller_container">
+        <h1>TALLER VIRTUAL INDUCCIÓN Y CLASIFICACIÓN</h1>
+        <div class="pasos_taller">
+            <p>Ahora te debes dirigir a aulas virtuales para realizar el taller de inducción de la práctica profesional.</p>
+            <button>ACCEDER AL TALLER</button>
+        </div>
+        <div class="pasos_taller">
+            <p>Ahora te debes escoger la clasificación para tu práctica profesional.</p>
+            <button>ESCOGE TU CLASIFICACIÓN</button>
+        </div>
+        <div class="taller_checkbox">
+            <div class="taller_checkbox">
+                <input type="checkbox" id="completado" required>
+                <label for="completado">He completado los pasos anteriores.</label>
+            </div>
+        </div>
+        <div class="boton_atras_sig">
+            <button type="button" id="btnCancelar">ATRAS</button>
+            <button onclick="siguiente()">SIGUIENTE</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav_list">
+            <a href="#" onclick="verificarFase()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/process.png" alt="process" />
+                <span class="nav_text">Proceso</span>
+            </a>
+            <a href="#" onclick="verificarOfertas()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/briefcase.png" alt="briefcase" id="ofertasB"/>
+                <span class="nav_text">Ofertas</span>
+            </a>
+            <a href="#" onclick="verificarFavoritos()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/like--v1.png" alt="like--v1" />
+                <span class="nav_text">Favoritos</span>
+            </a>
+            <a href="ajustes.html" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/settings.png" alt="settings" />
+                <span class="nav_text">Ajustes</span>
+            </a>
+        </div>
+    </nav>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/proceso.js"></script>  
+</body>
+</html>

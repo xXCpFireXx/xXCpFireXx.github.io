@@ -1,0 +1,132 @@
+
+
+.favorites-list {
+    list-style-type: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.favorite-item {
+    background-color: #505050;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    margin-top: 34px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+}
+
+
+.favorite-item .icono {
+    width: 100px;       
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.favorite-item .info {
+    padding: 10px;
+    align-content: center;
+    & h2{
+        font-family: 'Inter';
+        color: #FFFFFF;
+        margin-bottom: 0px;
+    }
+
+    & p {
+        margin-top: 0px;
+        color: #FFFFFF;
+        font-weight: lighter;
+    }
+}
+
+
+summary{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    &::-webkit-details-marker {display: none;}
+}
+
+.content {
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.content h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: #FFA630;
+}
+
+.content ul {
+    /* Elimina el margen alrededor de la lista */
+    margin: 0px;
+    margin-bottom: 3px;
+    padding-right: 5px; /* Elimina el relleno alrededor de la lista */
+    text-align: justify;
+
+    & li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.info-job {
+    margin-top: 35px;
+    font-family: 'Inter';
+}
+
+.info-job p {
+    margin: 0;
+}
+
+.info-job h3 {
+    margin-top: 30px;
+}
+
+.content .apply-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA630;
+    border: none;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: large;
+    margin-top: 1.2rem;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #FF950B;
+    }
+}
+
+@media (max-width: 452px) {
+
+    .favorite-item {
+        padding: 20px;
+
+        & img {
+            width: 80px;
+        }
+        
+        & .info h2{
+            font-size: 100%;
+        }
+    
+        & p {
+            font-size: 80%;
+        }
+    }
+
+} 

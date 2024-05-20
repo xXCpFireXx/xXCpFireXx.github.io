@@ -1,0 +1,159 @@
+.ofertas_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card_ofertas {
+    background-color: #505050;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    left: 100%; /* Fuera de la pantalla hacia la derecha */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Añadir transición para el desplazamiento y la opacidad */
+    /* Inicialmente, el div estará visible y completamente opaco */
+    opacity: 1;
+}
+
+.card_ofertas.oculto {
+    /* Cuando se añade la clase "oculto", el div se moverá hacia la izquierda */
+    transform: translateX(-100%);
+    opacity: 0; /* El div se desvanecerá hasta ser completamente transparente */
+}
+
+.card_ofertas.oculto2 {
+    transform: translateX(100%); /* Girar hacia la derecha */
+    opacity: 0; /* Desvanecer */
+}
+
+.reaparecer-en-centro {
+    transform: translateX(0) rotateY(0); /* Volver al centro */
+    opacity: 1; /* Aparecer */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Agregar una transición */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    /* justify-content: center;  */
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: #FFFFFF
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF
+}
+
+.icono {
+    width: 90px;
+    margin-right: 10px;
+    border-radius: 50%; 
+    border: 1px solid #000000;
+}
+
+@media screen and (max-width: 452px) {
+    .icono {
+        width: 80px; /* Cambia el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    .card_ofertas {        
+        padding: 25px;}
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column; /*el texto esté vertical*/
+}
+
+.text h2 {
+    margin: 0;
+}
+
+.text p {
+    margin-top: 5px;
+}
+
+.content {
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.content h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: #FFA630;
+}
+
+.content ul {
+    /* Elimina el margen alrededor de la lista */
+    margin: 0px;
+    margin-bottom: 3px;
+    padding-right: 5px; /* Elimina el relleno alrededor de la lista */
+}
+
+.info {
+    margin-top: 35px;
+    font-family: 'Inter';
+}
+
+.info p {
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.info h3 {
+    margin-top: 30px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20%;
+
+}
+
+.actions button {
+    padding: 13px 16px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    & img {
+        width: 50px;
+    }
+}
+
+.close-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.favorite-btn {
+    background-color: #FFA630;
+}

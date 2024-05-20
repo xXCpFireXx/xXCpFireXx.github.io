@@ -1,0 +1,24 @@
+.ajustes-item {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    & img {        
+        width: 50px;
+    }
+
+    & h2 {
+        color: #FFFF;
+        font-weight: bold;
+        font-size: xx-large;
+        margin-left: 1.5rem;
+    }
+}
+
+h1{
+    font-weight: bolder;
+}

@@ -1,0 +1,23 @@
+.notificaciones_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.notificaciones {
+    background-color: #505050;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notificaciones p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}

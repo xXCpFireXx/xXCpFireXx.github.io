@@ -1,0 +1,101 @@
+.taller_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 2.5rem;
+}
+
+/* BOTONES DE LOS PASOS AL TALLER */
+.pasos_taller {
+    background-color: #505050;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pasos_taller p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+    
+.pasos_taller button {
+    padding: 10px 20px;
+    background-color: #FFA630;
+    border: none;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pasos_taller button:hover {
+    background-color: #FF950B;
+}
+
+/* CHECKBOX */
+.taller_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta el espacio entre los pasos y el checkbox */
+}
+
+.taller_checkbox label {
+    display: inline-block;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.taller_checkbox input[type="checkbox"] {
+    margin-right: 10px; /* Espacio entre el radio button y el texto */
+    appearance: none; /* Oculta el estilo predeterminado del checkbox */
+    -webkit-appearance: none; /* Para compatibilidad con navegadores basados en WebKit */
+    -moz-appearance: none; /* Para compatibilidad con navegadores basados en Gecko */
+    width: 20px; /* Ancho deseado del checkbox */
+    height: 20px; /* Altura deseada del checkbox */
+    border-radius: 50%; /* Hace que el checkbox sea redondo */
+    border: 2px solid #FFA630; /* Borde del checkbox */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.taller_checkbox input[type="checkbox"]:checked {
+    background-color: #FFA630; /* Cambia el color de fondo cuando está seleccionado */
+}
+
+/* BOTONES DE ATRAS O SIGUIENTE */
+.boton_atras_sig {
+    display: flex; /* El botón me quede en la misma linea */
+    justify-content: space-between; /* Distribuye los botones horizontalmente con espacios iguales entre ellos */
+    margin-top: 40px; 
+    margin-bottom: 1.5rem;
+}
+
+.boton_atras_sig button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFA630;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;  
+    font-size: inherit; /* Utiliza el mismo tamaño de fuente que los botones de .taller-step */
+    width: calc(50% - 10px); /* Calcula el ancho para que los botones ocupen la mitad del espacio disponible con un margen de 10px */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del botón */
+}
+
+.boton_atras_sig button:hover {
+    background-color: #FF950B;
+}

@@ -1,0 +1,118 @@
+.hojaVida_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* BOTONES DE LOS PASOS DE LA HOJA DE VIDA */
+.pasos_hojaVida {
+    background-color: #505050;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pasos_hojaVida p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+    
+.pasos_hojaVida button {
+    padding: 10px 20px;
+    background-color: #FFA630;
+    border: none;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input#archivo {
+    color: #FFFFFF;
+    font-size: medium;
+    font-family: 'Inter';
+    font-weight: bolder;
+    width: 100%;    
+}
+
+::file-selector-button {
+    padding: 10px 20px;
+    background-color: #FFA630;
+    border: none;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: medium;   
+}
+
+.pasos_hojaVida button:hover {
+    background-color: #FF950B;
+}
+
+.boton_pasos {
+    width: 200px; 
+}
+
+/* BOTÓN ENVIAR */
+.boton_enviar {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px; 
+}
+
+.boton_enviar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFA630;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;  
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.boton_enviar button:hover {
+    background-color: #FF950B;
+}
+
+/* @media (max-width: 430px){
+    input#archivo {
+        color: #FFFFFF;
+        font-size: medium;
+        font-family: 'Inter';
+        font-weight: bolder;
+    }
+    
+    ::file-selector-button {
+        padding: 10px 20px;
+        background-color: #FFA630;
+        border: none;
+        height: 2.7rem;
+        border-radius: 7px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: 'Inter';
+        font-weight: bold;
+        transition: background-color 0.3s;
+        font-size: medium;
+    }
+} */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - WeSearch</title>
+    <link rel="icon" href="../img/WeSearch_icon.png">
+    <link rel="stylesheet" href="../css/favoritos.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Enlace al CDN de Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+
+<body>
+
+    <ul class="favorites-list">
+        <h1>FAVORITOS</h1>        
+    </ul>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav_list">
+            <a href="#" onclick="verificarFase()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/process.png" alt="process" />
+                <span class="nav_text">Proceso</span>
+            </a>
+            <a href="#" onclick="verificarOfertas()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/briefcase.png" alt="briefcase" id="ofertasB"/>
+                <span class="nav_text">Ofertas</span>
+            </a>
+            <a href="#" onclick="verificarFavoritos()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/like--v1.png" alt="like--v1" />
+                <span class="nav_text">Favoritos</span>
+            </a>
+            <a href="ajustes.html" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/settings.png" alt="settings" />
+                <span class="nav_text">Ajustes</span>
+            </a>
+        </div>
+    </nav>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/proceso.js"></script>
+    <script src="../js/favoritos.js"></script>
+</body>
+</html>

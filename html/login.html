@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - WeSearch</title>
+    <link rel="icon" href="../img/WeSearch_icon.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="../img/logo_weSearch.png" alt="Logo_empresa" class="logo">
+        <div id="error-message"></div> 
+        <form id="loginForm" action="../php/login.php" method="post">
+            <input type="email" id="email" name="email" placeholder="Correo institucional">
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            <!-- colocar la acción -->
+            <a href="https://tuclave.uniminuto.edu/" class="forgot_password">¿Olvidaste tu contraseña?</a>
+            <button type="submit">ENTRAR</button>
+        </form>
+    </div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="../js/login.js"></script>
+
+</body>
+</html>

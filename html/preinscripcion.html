@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preinscripción - WeSearch</title>
+    <link rel="icon" href="../img/WeSearch_icon.png">
+    <link rel="stylesheet" href="../css/preinscripcion.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="form_container">
+        <h1>PREINSCRIPCIÓN </h1>
+
+        <form action="../php/preinscripcion.php" method="POST">
+            <div class="taller_checkbox">
+                <div class="taller_checkbox">
+                    <input type="checkbox" id="completado">
+                    <label for="completado">Autorización política de tratamientos de datos personales.</label>
+                </div>
+            </div>
+
+            <input type="text" placeholder="Nombre completo" name="nombreEstudiante" />
+
+            <div class="document">
+                <select name="tipoIdentificacion" required>
+                    <option value="" selected disabled hidden>Tipo de documento</option>
+                    <option value="CC">Cedula de ciudadania</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                    <option value="PA">Pasaporte</option>
+                </select>
+                <input type="text" placeholder="N° Documento" name="identificacion" required />
+            </div>
+
+            <input type="tel" placeholder="Celular" name="telefono" required />
+            <input type="number" placeholder="ID Institucional" name="id" required />
+            <select name="sede" required>
+                <option value="" selected disabled hidden>Sede</option>
+                <option value="Antioquia - Chocó">Antioquia - Chocó</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Caribe">Caribe</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Eje Cafetero">Eje Cafetero</option>
+                <option value="Orinoquía">Orinoquía</option>
+                <option value="Santanderes">Santanderes</option>
+                <option value="Suroccidente">Suroccidente</option>
+                <option value="Sur">Sur (Huila, Caquetá y Putumayo)</option>
+                <option value="Tolima y Magdalena Medio">Tolima y Magdalena Medio</option>
+            </select>
+            <select name="carrera" required>
+                <option value="" selected disabled hidden>Programa academico</option>
+                <option value="Administración de Empresas">Administración de Empresas</option>
+                <option value="Administración en Seguridad y Salud en el Trabajo">Administración en Seguridad y Salud en
+                    el Trabajo</option>
+                <option value="Comunicación Social y Periodismo">Comunicación Social y Periodismo</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Trabajo Social">Trabajo Social</option>
+                <option value="Ingeniería de Software">Ingeniería de Software</option>
+            </select>
+            <input type="text" placeholder="Periodo académico" name="periodoAcademico" required />
+            <input type="text" placeholder="Créditos aprobados" name="creditosAprobados" required />
+
+            <select name="estadoPractica" required>
+                <option value="" selected disabled hidden>Estado de Práctica en Responsabilidad Social</option>
+                <option value="1">Completada</option>
+                <option value="0">No completada</option>
+            </select>
+            <select name="salud" required>
+                <option value="" selected disabled hidden>Afiliación al sistema de salud</option>
+                <option value="1">Si</option>
+                <option value="0">No</option>
+            </select>
+
+            <div class="boton_atras_sig">
+                <button type="button" id="btnCancelar">CANCELAR</button>
+                <button type="submit">PREINSCRIBIR</button>
+            </div>
+        </form>
+
+    </div>
+
+     <!-- Navbar -->
+     <nav>
+        <div class="nav_list">
+            <a href="#" onclick="verificarFase()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/process.png" alt="process" />
+                <span class="nav_text">Proceso</span>
+            </a>
+            <a href="#" onclick="verificarOfertas()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/briefcase.png" alt="briefcase" id="ofertasB"/>
+                <span class="nav_text">Ofertas</span>
+            </a>
+            <a href="#" onclick="verificarFavoritos()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/like--v1.png" alt="like--v1" />
+                <span class="nav_text">Favoritos</span>
+            </a>
+            <a href="ajustes.html" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/settings.png" alt="settings" />
+                <span class="nav_text">Ajustes</span>
+            </a>
+        </div>
+    </nav>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/proceso.js"></script>
+</body>
+
+</html>

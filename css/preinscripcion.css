@@ -1,0 +1,104 @@
+.form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* CHECKBOX */
+.taller_checkbox {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 20px; /* Ajusta el espacio entre los pasos y el checkbox */
+}
+
+.taller_checkbox label {
+    display: inline-block;
+    font-family: 'Inter';
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.taller_checkbox input[type="checkbox"] {
+    margin-right: 10px; /* Espacio entre el radio button y el texto */
+    margin-bottom: 3%;
+    appearance: none; /* Oculta el estilo predeterminado del checkbox */
+    -webkit-appearance: none; /* Para compatibilidad con navegadores basados en WebKit */
+    -moz-appearance: none; /* Para compatibilidad con navegadores basados en Gecko */
+    width: 20px; /* Ancho deseado del checkbox */
+    height: 20px; /* Altura deseada del checkbox */
+    border-radius: 50%; /* Hace que el checkbox sea redondo */
+    border: 2px solid #FFA630; /* Borde del checkbox */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.taller_checkbox input[type="checkbox"]:checked {
+    background-color: #FFA630; /* Cambia el color de fondo cuando está seleccionado */
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 7px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    height: 1.5rem;
+    margin-top: 17px;
+    position: relative;
+    background-color: #D9D9D9;
+    font-family: 'Inter';
+    font-weight: bold;
+    &::placeholder {color:#545050;}
+}
+
+select {
+    background-color: #D9D9D9;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    height: 2.8rem;
+    margin-top: 17px;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.document {
+    display: flex;
+    gap: 1rem;
+    & select {
+        width: 95%; 
+    }
+}
+
+/* BOTONES DE ATRAS O SIGUIENTE */
+.boton_atras_sig {
+    display: flex; /* El botón me quede en la misma linea */
+    justify-content: space-between; /* Distribuye los botones horizontalmente con espacios iguales entre ellos */
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.boton_atras_sig button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFA630;
+    height: 2.7rem;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    transition: background-color 0.3s;  
+    font-size: inherit; /* Utiliza el mismo tamaño de fuente que los botones de .taller-step */
+    width: calc(50% - 10px); /* Calcula el ancho para que los botones ocupen la mitad del espacio disponible con un margen de 10px */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del botón */
+}
+
+.boton_atras_sig button:hover {
+    background-color: #FF950B;
+}

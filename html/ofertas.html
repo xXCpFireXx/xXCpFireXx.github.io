@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - WeSearch</title>
+    <link rel="icon" href="../img/WeSearch_icon.png">
+    <link rel="stylesheet" href="../css/ofertas.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Enlace al CDN de Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <div class="ofertas_container" id="ofertas-container">
+        <div class="card_ofertas">
+            <div class="header">
+                <img class="icono" src="" alt=""></img>
+                <div class="text">
+                    <h2 id="nombreEmpresa"></h2>
+                    <p id="cargoEmpresa"></p>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Funciones</h3>
+                <ul id="funcionEmpresa">
+                    <!-- <li>Conocimientos perfectos de los lenguajes de JAVA y Python.</li>
+                    <li>Diseñar y crear nuevos software y hardware para agilizar el proceso y resultados de una empresa u organización.</li>
+                    <li>Habilidad e iniciativa para el desarrollo, la ejecución y el mantenimiento de software.</li>
+                    <li>Agilidad para elaborar códigos de programación.</li> -->
+                </ul>
+                <div class="info">
+                    <h3>Lugar</h3>
+                    <p id="lugar"></p>
+                    <h3>Tiempo</h3>
+                    <p id="tiempo"></p>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="close-btn"><img src="https://img.icons8.com/ios-filled/100/FFFFFF/delete-sign--v1.png" alt="delete-sign--v1"/></button>
+            <button class="favorite-btn" data-id-oferta="1"><img src="https://img.icons8.com/ios-filled/100/FFFFFF/like--v1.png" alt="like--v1"/></button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav_list">
+            <a href="#" onclick="verificarFase()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/process.png" alt="process" />
+                <span class="nav_text">Proceso</span>
+            </a>
+            <a href="#" onclick="verificarOfertas()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/briefcase.png" alt="briefcase" id="ofertasB"/>
+                <span class="nav_text">Ofertas</span>
+            </a>
+            <a href="#" onclick="verificarFavoritos()" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/like--v1.png" alt="like--v1" />
+                <span class="nav_text">Favoritos</span>
+            </a>
+            <a href="ajustes.html" class="nav_link">
+                <img src="https://img.icons8.com/ios-filled/100/FFFFFF/settings.png" alt="settings" />
+                <span class="nav_text">Ajustes</span>
+            </a>
+        </div>
+    </nav>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/proceso.js"></script>
+
+    <script src="../js/ofertas.js"></script>
+</body>
+</html>
