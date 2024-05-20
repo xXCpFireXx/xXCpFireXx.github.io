@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "roundhouse.proxy.rlwy.net";
 $username = "root";
-$password = "";
-$database = "wesearch";
+$password = "CpzAmCegSUeUoykaqJuLEgdHDUyVIahf";
+$database = "railway";
 
 // Crear conexión
 $conex = new mysqli($servername, $username, $password, $database);
